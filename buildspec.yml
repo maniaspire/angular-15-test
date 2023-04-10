@@ -15,3 +15,5 @@ phases:
       - npm run lint
       - echo Testing Process Started
       - npm run test
+      - echo Build Process Started
+      - npm run build
