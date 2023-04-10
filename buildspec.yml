@@ -5,6 +5,9 @@ phases:
     runtime-versions:
       nodejs: 16
     commands:
+      # Install chrome
+      - apt-get update
+      - apt-get install -y google-chrome-stable
       # Package Installation for Application and Deployment Scripts
       - echo Installation Process Started
       - npm install
