@@ -1,0 +1,18 @@
+version: 0.2
+phases:
+  install:
+    # Latest Runtime Version 16.x On May 2022
+    runtime-versions:
+      nodejs: 16
+    commands:
+      # Package Installation for Application and Deployment Scripts
+      - echo Installation Process Started
+      - npm install
+      - npm install --prefix scripts
+  pre_build:
+    commands:
+      # Linting & Testing
+      - echo Linting Process Started
+      - npm run lint
+      - echo Testing Process Started
+      - npm run test
