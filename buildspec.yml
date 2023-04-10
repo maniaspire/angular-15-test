@@ -8,7 +8,6 @@ phases:
       # Package Installation for Application and Deployment Scripts
       - echo Installation Process Started
       - npm install
-      - npm install --prefix scripts
   pre_build:
     commands:
       # Linting & Testing
