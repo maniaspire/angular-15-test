@@ -1,4 +1,7 @@
 version: 0.2
+batch:
+  fast-fail: false
+  
 phases:
   install:
     # Latest Runtime Version 16.x On May 2022
